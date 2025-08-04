@@ -9,6 +9,9 @@ import AcademicDepartment from "./pages/AcademicDepartment";
 import AcademicFaculty from "./pages/AcademicFaculty";
 import AcademicSemester from "./pages/AcademicSemester";
 import Attendance from "./pages/Attendance";
+import CGPACalculator from "./pages/CGPACalculator";
+import CGPAFacultyPanel from "./pages/CGPAFacultyPanel";
+import CGPAStudentPanel from "./pages/CGPAStudentPannel";
 import ChangePassword from "./pages/ChangePassword";
 import CourseCreation from "./pages/CourseCreation";
 import CourseManagementHub from "./pages/CourseManagementHub";
@@ -76,6 +79,9 @@ const App = () => (
               path="/offered-course-management"
               element={<OfferedCourseManagement />}
             />
+            <Route path="/cgpa-calculator" element={<CGPACalculator />} />
+            <Route path="/cgpa-faculty" element={<CGPAFacultyPanel />} />
+            <Route path="/cgpa-student" element={<CGPAStudentPanel />} />
             <Route path="/student-enrollment" element={<StudentEnrollment />} />
             <Route path="/user/create" element={<CreateUser />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

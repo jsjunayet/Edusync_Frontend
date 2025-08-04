@@ -149,10 +149,16 @@ const menuGroups: MenuGroup[] = [
         roles: ["admin", "faculty", "student", "class_representative"],
       },
       {
-        title: "Students Mark",
-        url: "/student-enrollment",
+        title: "Assign Marks",
+        url: "/cgpa-faculty",
         icon: GraduationCap,
         roles: ["faculty"],
+      },
+      {
+        title: "Student Result",
+        url: "/cgpa-student",
+        icon: GraduationCap,
+        roles: ["admin", "faculty", "student", "class_representative"],
       },
     ],
   },
@@ -235,6 +241,18 @@ const menuGroups: MenuGroup[] = [
       {
         title: "Profile",
         url: "/profile",
+        icon: User,
+        roles: [
+          "admin",
+          "faculty",
+          "student",
+          "lab_in_charge",
+          "class_representative",
+        ],
+      },
+      {
+        title: "CGPA Calculator",
+        url: "/cgpa-calculator",
         icon: User,
         roles: [
           "admin",
